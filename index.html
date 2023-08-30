@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HoverIcon</title>
+    <style>
+        body {
+            margin: 0 auto;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        .box {
+            background-color: lightgray;
+            width: 400px;
+            height: 500px;
+            margin: 20px auto;
+            display: flex;
+            justify-content: flex-end;
+            border-radius: 20px;
+        }
+
+        .absolute {
+            justify-content: left;
+            align-items: flex-end;
+        }
+
+        #toolbox {
+            opacity: 1;
+            width: 50px;
+            height: auto;
+            transition: .5s ease;
+            backface-visibility: hidden;
+            padding: 70px 10px;
+        }
+
+        .icon_description{
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 7%;
+            right: 26%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+            background-color: rgb(156, 156, 156);
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+
+        .box:hover #toolbox {
+            opacity: 0.3;
+        }
+
+        .box:hover .icon_description {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <div class="absolute">
+            <img src="https://i.ibb.co/JKVmvQp/toolbox.png" alt="toolbox" id="toolbox">
+            <p class="icon_description">Toolbox</p>
+        </div>
+
+    </div>
+
+
+
+</body>
+<!-- Hosted image
+<a href="https://ibb.co/ZV5GBmg"><img src="https://i.ibb.co/JKVmvQp/toolbox.png" alt="toolbox" border="0"></a>
+-->
+
+</html>
